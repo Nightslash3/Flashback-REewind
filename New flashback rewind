@@ -1,4 +1,5 @@
-local key = "C" -- Key to initiate the flashback. You can change it if you desire.
+local key = "C" -- Key to initiate the flashback
+local killKey = "P" -- Key to kill the script
 local flashbacklength = 80 -- How long the flashback should be stored in approx seconds
 local flashbackspeed = 0.9 -- How many frames to skip during flashback (set to 0 to disable)
 
@@ -93,6 +94,11 @@ local function step()
        flashback:Revert(char, hrp, hum)
    else
        flashback:Advance(char, hrp, hum, true)
+   end
+   
+   if uis:IsKeyDown(Enum.KeyCode[killKey]) then -- Kill the script
+       RS:UnbindFromRenderStep(name)
+       script:Destroy()
    end
 end
 
