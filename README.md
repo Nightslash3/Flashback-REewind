@@ -1,6 +1,6 @@
-# Flashback-REewind
-A new flashback rewind script since roblox broke the old one i used
-this is the old script i used to create the new one, i dont know who made it b ut still wanted to credit it: 
+# Flashback-REwind
+# A new flashback rewind script since roblox broke the old one i used
+# this is the old script i used to create the new one, i dont know who made it b ut still wanted to credit it: 
 local key = "V" --key to intiate the flashback. see https://create.roblox.com/docs/reference/engine/enums/KeyCode for an exhaustive list
 local flashbacklength = 80 --how long the flashback should be stored in approx seconds
 local flashbackspeed = 0.9 --how many frames to skip during flashback (set to 0 to disable)
